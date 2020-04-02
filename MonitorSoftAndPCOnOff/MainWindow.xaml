@@ -1,12 +1,15 @@
-﻿<Window x:Class="MonitorSoftAndPCOnOff.MainWindow"
+﻿<Window x:Name="windows2" x:Class="MonitorSoftAndPCOnOff.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MonitorSoftAndPCOnOff"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Мониториг запуска" Height="350" Width="525" Closed="windows_Closed" Loaded="windows_Loaded">
     <Grid>
-        
+        <Button x:Name="buttonCreate" Content="Создать базу с таблицами" Margin="29,10,207.5,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="buttonAddOn" Content="Добавить запись о включении" Margin="29,51,194,0" VerticalAlignment="Top" Click="buttonAddOn_Click"/>
+        <Button x:Name="buttonAddOff" Content="Добавить запись о выключении" Margin="29,90,194,0" VerticalAlignment="Top" Click="buttonAddOff_Click"/>
+
     </Grid>
 </Window>
